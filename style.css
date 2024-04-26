@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-de-fundo: #252828;
+    --red: #DC2011;
+    --branco: #EFDFC5;
+    --botao-ativo: #380F17;
+    --botao-inativo: #464444;
+    --texto-fundo: #380F17;
+}
+
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+}
+span {
+    color: var(--red);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.botoes{
+    display: flex;
+}
+.botao {
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    background: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    padding: 1em;
+}
+.botao:hover {
+    background: rgb(163, 40, 40);
+    color: rgb(224, 90, 90);
+}
+.botao:first-child {
+    border-radius: 40px 0 0 0;
+}
+.botao:last-child {
+    border-radius: 0 40px 0 0;
+}
+.botao.ativo {
+    background: var(--botao-ativo);
+    border-bottom: 4px solid var(--red);
+}
+.secundario {
+    background: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+
+}
+.conteudo.ativo {
+    display: block;
+}
+.conteudo {
+    display: none;
+}
+.conteudo-conteudo {
+    font-size: 32px;
+    text-align: center;
+}
+.conteudo-secundario {
+    text-align: center;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.contador {
+    display: flex;
+    justify-content:center;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+.digito {
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.dias, .minutos, .horas, .segundos {
+    color: var(--red);
+}
